@@ -84,9 +84,6 @@ for index,prob in enumerate(probabilities):
     labelID = indices[index]
     # grab the label using its ID
     label = categories[labelID]
-    # skip over non-koala labels
-    if label != "koala":
-        continue
     # only add a region to the labels dictionary if
     # koala probability is greater than 90%
     if prob >= 0.9:
